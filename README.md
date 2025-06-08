@@ -10,3 +10,4 @@ This project is a minimal PHP + MySQL shopping site featuring user registration,
 
 ## Frontend Preview
 A static frontend is available in `frontend/index.html` along with pages for products, contact, about and login. Serve the folder with a simple HTTP server. The demo uses `frontend/styles.css` for styling and `frontend/script.js` for basic interaction.
+`products.html` tries to load data from `api/products.php` and falls back to demo items if the backend is unavailable.
