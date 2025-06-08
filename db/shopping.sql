@@ -30,3 +30,15 @@ CREATE TABLE order_product (
   FOREIGN KEY (order_id) REFERENCES orders(id),
   FOREIGN KEY (product_id) REFERENCES products(id)
 );
+
+-- Demo data for quick testing
+INSERT INTO users (email, password, role) VALUES
+  ('vendor@example.com', '$2b$12$N.tn7Wy7pYqE3zphYcVSZOw7p4/b.24VtbDxn7aE0gvcg.TW5krhW', 'vendor');
+
+INSERT INTO products (user_id, name, description, price, image) VALUES
+  (1, 'Sample Product 1', 'Description 1', 9.99, 'https://via.placeholder.com/150'),
+  (1, 'Sample Product 2', 'Description 2', 19.99, 'https://via.placeholder.com/150'),
+  (1, 'Sample Product 3', 'Description 3', 29.99, 'https://via.placeholder.com/150'),
+  (1, 'Sample Product 4', 'Description 4', 39.99, 'https://via.placeholder.com/150'),
+  (1, 'Sample Product 5', 'Description 5', 49.99, 'https://via.placeholder.com/150'),
+  (1, 'Sample Product 6', 'Description 6', 59.99, 'https://via.placeholder.com/150');
